@@ -19,7 +19,51 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="temp.cpp" />
+    <ClCompile Include="3rdparty\glfw.c" />
+    <ClCompile Include="raylib\core.c" />
+    <ClCompile Include="raylib\models.c" />
+    <ClCompile Include="raylib\raudio.c" />
+    <ClCompile Include="raylib\shapes.c" />
+    <ClCompile Include="raylib\text.c" />
+    <ClCompile Include="raylib\textures.c" />
+    <ClCompile Include="raylib\utils.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="3rdparty\cgltf.h" />
+    <ClInclude Include="3rdparty\dirent.h" />
+    <ClInclude Include="3rdparty\dr_flac.h" />
+    <ClInclude Include="3rdparty\dr_mp3.h" />
+    <ClInclude Include="3rdparty\dr_wav.h" />
+    <ClInclude Include="3rdparty\glad.h" />
+    <ClInclude Include="3rdparty\jar_mod.h" />
+    <ClInclude Include="3rdparty\jar_xm.h" />
+    <ClInclude Include="3rdparty\miniaudio.h" />
+    <ClInclude Include="3rdparty\par_shapes.h" />
+    <ClInclude Include="3rdparty\rgif.h" />
+    <ClInclude Include="3rdparty\stb_image.h" />
+    <ClInclude Include="3rdparty\stb_image_resize.h" />
+    <ClInclude Include="3rdparty\stb_image_write.h" />
+    <ClInclude Include="3rdparty\stb_perlin.h" />
+    <ClInclude Include="3rdparty\stb_rect_pack.h" />
+    <ClInclude Include="3rdparty\stb_truetype.h" />
+    <ClInclude Include="3rdparty\stb_vorbis.h" />
+    <ClInclude Include="3rdparty\tinyobj_loader_c.h" />
+    <ClInclude Include="macros.h" />
+    <ClInclude Include="raylib\camera.h" />
+    <ClInclude Include="raylib\config.h" />
+    <ClInclude Include="raylib\easings.h" />
+    <ClInclude Include="raylib\gestures.h" />
+    <ClInclude Include="raylib\physac.h" />
+    <ClInclude Include="raylib\raudio.h" />
+    <ClInclude Include="raylib\raylib.h" />
+    <ClInclude Include="raylib\raymath.h" />
+    <ClInclude Include="raylib\rlgl.h" />
+    <ClInclude Include="raylib\rmem.h" />
+    <ClInclude Include="raylib\rnet.h" />
+    <ClInclude Include="raylib\utils.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="raylib\shell.html" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{3A59D538-3071-4100-88F2-0997DD64DEED}</ProjectGuid>
@@ -96,8 +140,9 @@
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpplatest</LanguageStandard>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <AdditionalIncludeDirectories>$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)raylib\;$(ProjectDir)3rdparty\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ForcedIncludeFiles>macros.h</ForcedIncludeFiles>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -111,8 +156,9 @@
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpplatest</LanguageStandard>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <AdditionalIncludeDirectories>$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)raylib\;$(ProjectDir)3rdparty\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ForcedIncludeFiles>macros.h</ForcedIncludeFiles>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -128,7 +174,8 @@
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpplatest</LanguageStandard>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <AdditionalIncludeDirectories>$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)raylib\;$(ProjectDir)3rdparty\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>macros.h</ForcedIncludeFiles>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -146,7 +193,8 @@
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpplatest</LanguageStandard>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <AdditionalIncludeDirectories>$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)raylib\;$(ProjectDir)3rdparty\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>macros.h</ForcedIncludeFiles>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
